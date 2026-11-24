@@ -62,3 +62,10 @@
 .hanwha-page {
     --team-color: #e87500;
 }
+
+
+document.getElementById("stadium-name").textContent =
+    team.stadium;
+
+document.getElementById("stadium-description").textContent =
+    `${team.city}을 연고로 하는 ${team.korean}의 홈구장입니다.`;
