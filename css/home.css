@@ -1,0 +1,101 @@
+.hero {
+    min-height: 430px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background:
+        linear-gradient(rgba(0,0,0,0.65), rgba(0,0,0,0.65)),
+        url("../images/baseball.jpg") center/cover;
+    gap: 20px;
+}
+
+.hero h1 {
+    font-size: 45px;
+}
+
+.hero p {
+    font-size: 18px;
+    color: #ddd;
+}
+
+.main-btn {
+    background: #e63946;
+    padding: 14px 28px;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.teams-section {
+    padding: 70px 8%;
+    text-align: center;
+}
+
+.teams-section h2 {
+    font-size: 32px;
+    margin-bottom: 15px;
+}
+
+.teams-section > p {
+    color: #aaa;
+    margin-bottom: 35px;
+}
+
+.team-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+
+.team-card {
+    padding: 65px 20px;
+    border-radius: 12px;
+    transition: 0.3s;
+}
+
+.team-card:hover {
+    transform: translateY(-8px);
+}
+
+.kia {
+    background: #c8102e;
+}
+
+.samsung {
+    background: #0066b3;
+}
+
+.lotte {
+    background: #172b4d;
+}
+
+.hanwha {
+    background: #e87500;
+}
+
+.team-card h3 {
+    font-size: 25px;
+    margin-bottom: 10px;
+}
+
+@media (max-width: 700px) {
+    .header {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    nav {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 12px;
+    }
+
+    .hero h1 {
+        font-size: 28px;
+    }
+
+    .team-container {
+        grid-template-columns: 1fr;
+    }
+}
